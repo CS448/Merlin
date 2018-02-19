@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'
 
-const routs: Routes = [
+const routes: Routes = [
   {
     path: '',
-    loadChildren: './main-container/main-container.module#MainContainerModule' 
+    loadChildren: 'app/main-container/main-container.module#MainContainerModule' 
   }
 ]
 
 @NgModule({
+  imports: [RouterModule.forRoot(routes)],
   exports: [ RouterModule ]
 })
 
