@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DroneService } from '../../../_services/drone-service/drone-service.service';
+import { Drone } from '../../../_models/drone';
 
 @Component({
   selector: 'app-drone-overview',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DroneOverviewComponent implements OnInit {
 
-  constructor() { }
+  drones: Drone [];
+  constructor(private droneService: DroneService) { }
 
   ngOnInit() {
+
+    this.drones = this.droneService.getDrones();
+
   }
 
 }

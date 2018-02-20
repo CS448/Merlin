@@ -8,7 +8,7 @@ import { DroneService } from '../../../_services/drone-service/drone-service.ser
 })
 export class DroneDetailComponent implements OnInit {
 
-  constructor(private droneService: DroneService) { }
+  constructor() { }
 
   ngOnInit() {
   }

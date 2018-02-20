@@ -1,3 +1,5 @@
-<p>
-  drone-overview works!
-</p>
+<div>
+  <div *ngFor="let drone of drones">
+    <app-drone-display [drone]="drone"></app-drone-display>
+  </div>
+</div>

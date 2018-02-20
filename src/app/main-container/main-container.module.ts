@@ -4,12 +4,19 @@ import { DroneOverviewComponent } from './components/drone-overview/drone-overvi
 import { DroneDetailComponent } from './components/drone-detail/drone-detail.component';
 import { MapViewComponent } from './components/map-view/map-view.component';
 import { MainContainerRoutingModule } from './main-container-routing.module';
+import { DroneService } from '../_services/drone-service/drone-service.service';
+import { MatIconModule } from '@angular/material/icon';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { DroneDisplayComponent } from './components/drone-overview/drone-display/drone-display.component';
 
 @NgModule({
   imports: [
     CommonModule,
+    MatIconModule,
+    MatGridListModule,
     MainContainerRoutingModule
   ],
-  declarations: [DroneOverviewComponent, DroneDetailComponent, MapViewComponent]
+  providers: [DroneService],
+  declarations: [DroneOverviewComponent, DroneDetailComponent, MapViewComponent, DroneDisplayComponent]
 })
 export class MainContainerModule { }
