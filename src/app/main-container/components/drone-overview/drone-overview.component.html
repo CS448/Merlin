@@ -1,5 +1,7 @@
-<div>
-  <div *ngFor="let drone of drones">
+<div class="app-container">
+<mat-grid-list cols="4" rowHeight="150">
+  <mat-grid-tile *ngFor="let drone of drones">
     <app-drone-display [drone]="drone"></app-drone-display>
-  </div>
+  </mat-grid-tile>
+</mat-grid-list>
 </div>

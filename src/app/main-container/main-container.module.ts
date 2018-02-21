@@ -7,6 +7,7 @@ import { MainContainerRoutingModule } from './main-container-routing.module';
 import { DroneService } from '../_services/drone-service/drone-service.service';
 import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 import { DroneDisplayComponent } from './components/drone-overview/drone-display/drone-display.component';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { DroneDisplayComponent } from './components/drone-overview/drone-display
     CommonModule,
     MatIconModule,
     MatGridListModule,
+    MatCardModule,
     MainContainerRoutingModule
   ],
   providers: [DroneService],

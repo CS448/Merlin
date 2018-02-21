@@ -1,12 +1,16 @@
-<div>
-  <!-- Drone Image -->
-  <div class="drone-image">
+<mat-card>
+  <mat-card-content>
+    <div fxLayout="column" fxLayoutAlign="start stretch">
+      <div>
+        <img [src]="drone.DroneImage" class="overview-image">
+      </div>
+      <div>
+        <div>{{drone.DroneName}}</div>
+        <div>{{drone.Status}}</div>
+      </div>
 
-  </div>
-  <!-- Drone Information -->
-  <div class="drone-information">
-    <span>{{drone.DroneName}}</span>
-    <span>{{drone.DroneStatus}}</span>
-    <span>{{drone.DetailCommand}} + {{drone.DroneId}}</span>
-  </div>
-</div>
+    </div>
+
+    <!-- <div>{{drone.DetailCommand}} + {{drone.DroneId}}</div> -->
+  </mat-card-content>
+</mat-card>
