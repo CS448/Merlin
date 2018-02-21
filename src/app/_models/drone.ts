@@ -4,7 +4,6 @@ export class Drone {
     DroneType: string;
     Status: string;
     OperationalTime: number; //seconds
-    DroneIconId: number;
     Altitude: number;
     CurrentBatteryLevel: number;
     MaxBatteryLevel: number;
